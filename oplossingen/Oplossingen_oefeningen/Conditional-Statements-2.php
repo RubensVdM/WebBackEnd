@@ -1,6 +1,7 @@
 <?php
 $number = 5;
 $day = "";
+$dayupper = strtoupper($day);
 ?>
 
 
@@ -10,7 +11,7 @@ $day = "";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Conditional-Statements-1</title>
+    <title>Conditional-Statements-2</title>
 </head>
 <body>
 <p>
@@ -50,7 +51,8 @@ if($number == 7)
 $day = "zondag";
 }
 
-echo "Het is vandaag " . $day;
+echo "Het is vandaag " . $day . ", in hoofdletters is dit" . $dayupper;
+
 ?>
 </p>
 </body>
