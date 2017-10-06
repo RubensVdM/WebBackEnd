@@ -21,7 +21,7 @@ $langstewoordZonderE = str_replace($lettertje, $cijfertje, $langsteWoord);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>String-extra-functions-1</title>
+    <title>String-extra-functions</title>
 </head>
 <body>
 <p> Deel 1
