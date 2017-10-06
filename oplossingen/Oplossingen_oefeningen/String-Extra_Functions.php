@@ -1,7 +1,17 @@
 <?php
 $fruit = "kokosnoot";
-$aantalKaraktersFruit = strlen($kokonoot);
+$aantalKaraktersFruit = strlen($fruit);
+$plaatsEersteO = strpos($fruit, "o");
 
+$fruit2 = "ananas";
+$aantalKaraktersFruit = strlen($fruit2);
+$plaatsLaatsteA = strrpos($fruit2, "a");
+$fruit2Upper = strtoupper($fruit2);
+
+$lettertje = "e";
+$cijfertje = 3;
+$langsteWoord = "zandzeepsodemineralenwatersteenstralen";
+$langstewoordZonderE = str_replace($lettertje, $cijfertje, $langsteWoord);
 ?>
 
 
@@ -14,9 +24,21 @@ $aantalKaraktersFruit = strlen($kokonoot);
     <title>String-extra-functions-1</title>
 </head>
 <body>
-<p>
+<p> Deel 1
 <?=
-$aantalKaraktersFruit;
+"Het woord " . $fruit . " heeft " . $aantalKaraktersFruit . " letters en de eerste o komt voor op op plaats " . $plaatsEersteO ;
+?>
+</p>
+
+<p> Deel 2
+<?=
+"Het woord " . $fruit2 . " heeft " . $aantalKaraktersFruit . " letters en de laatste a komt voor op plaats " . $plaatsLaatsteA . ". In hoofdletters ziet het woord er zo uit: " . $fruit2Upper;
+?>
+</p>
+
+<p> Deel 3
+<?=
+"Het woord " . $langsteWoord . " ziet er zo uit: " . $langstewoordZonderE . " als je alle e's vervangt door drie's.";
 ?>
 </p>
     
