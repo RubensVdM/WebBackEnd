@@ -1,7 +1,6 @@
 <?php
 $number = 5;
 $day = "";
-$dayupper = strtoupper($day);
 ?>
 
 
@@ -51,7 +50,9 @@ if($number == 7)
 $day = "zondag";
 }
 
-echo "Het is vandaag " . $day . ", in hoofdletters is dit" . $dayupper;
+$dayupper = strtoupper($day);
+
+echo "Het is vandaag " . $day . ", in hoofdletters is dit " . $dayupper;
 
 ?>
 </p>
