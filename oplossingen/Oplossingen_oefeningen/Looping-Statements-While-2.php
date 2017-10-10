@@ -1,5 +1,5 @@
 <?php
-$boodschappenlijstje = array();
+$boodschappenlijstje = array("melk", "koffie", "peer", "cola");
 
 
 ?>
@@ -14,6 +14,12 @@ $boodschappenlijstje = array();
     <title>Looping-Statements-While-2</title>
 </head>
 <body>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
 <p>
 <?php
 

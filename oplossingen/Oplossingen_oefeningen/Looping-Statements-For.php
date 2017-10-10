@@ -1,13 +1,6 @@
 <?php
-$totalAmountOfSeconds = 221108521;
-
-$amountOfYears;
-$amountOfMonths;
-$amountOfWeeks;
-$amountOfDays;
-$amountOfHours;
-$amountOfMinutes;
-$amountOfSeconds;
+$rijen = 10;
+$kolommen = 10;
 
 ?>
 
@@ -18,7 +11,7 @@ $amountOfSeconds;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Conditional-Statements-If-Else-2</title>
+    <title>Looping-Statements-For</title>
 </head>
 <body>
 <p>
@@ -28,6 +21,6 @@ $amountOfSeconds;
 
 
 ?>
-</p>    
+</p>
 </body>
 </html>
