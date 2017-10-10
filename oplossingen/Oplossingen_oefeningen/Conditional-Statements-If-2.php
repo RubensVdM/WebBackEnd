@@ -1,5 +1,5 @@
 <?php
-$number = 5;
+$number = 6;
 $day = "";
 ?>
 
@@ -50,9 +50,14 @@ if($number == 7)
 $day = "zondag";
 }
 
-$dayupper = strtoupper($day);
+$dayUpper = strtoupper($day);
+$dayWithoutA = str_replace("A", "a", $dayUpper);
+$positionLastA = strrpos($dayUpper, "A");
+$dayWithLastA = substr_replace($dayUpper, "a", $positionLastA, 1);
 
-echo "Het is vandaag " . $day . ", in hoofdletters is dit " . $dayupper;
+echo "Het is vandaag " . $day . ", in hoofdletters is dit " . $dayUpper;
+echo ", wanneer de letter 'a' geen hoofdletter is ziet dit er zo uit: " . $dayWithoutA;
+echo ". Wanneer alle letters hoofdletters zijn buiten de laatste 'a', ziet dit er zo uit: " . $dayWithLastA;
 
 ?>
 </p>
