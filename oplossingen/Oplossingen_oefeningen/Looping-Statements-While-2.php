@@ -1,7 +1,6 @@
 <?php
 $boodschappenlijstje = array("melk", "koffie", "peer", "cola");
-
-
+$boodschappenTeller = 0;
 ?>
 
 
@@ -15,15 +14,14 @@ $boodschappenlijstje = array("melk", "koffie", "peer", "cola");
 </head>
 <body>
 <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
-<p>
-<?php
 
-?>
-</p>   
+<?php while( isset($boodschappenlijstje[$boodschappenTeller])):?>
+
+<li><?= $boodschappenlijstje[$boodschappenTeller]?></li>
+<?php $boodschappenTeller++ ?>
+
+<?php endwhile?> 
+
+</ul> 
 </body>
 </html>

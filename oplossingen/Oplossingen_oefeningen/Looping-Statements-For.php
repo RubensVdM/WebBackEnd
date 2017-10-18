@@ -1,10 +1,3 @@
-<?php
-$rijen = 10;
-$kolommen = 10;
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -15,12 +8,23 @@ $kolommen = 10;
 </head>
 <body>
 <p>
-<?php
+<table>
+<?php for($rij = 0; $rij < 10; $rij++):?>
+    <tr>
+        <?php for($kolom = 0; $kolom < 10; $kolom++):?>
+            <td>kolom</td>
+        <?php endfor;?>
+    </tr>
+<?php endfor;?>
+</table>
+</p>
+
+<p>
+<table>
 
 
 
-
-?>
+</table>
 </p>
 </body>
 </html>
