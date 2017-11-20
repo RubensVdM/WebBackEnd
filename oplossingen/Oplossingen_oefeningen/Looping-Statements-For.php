@@ -9,6 +9,7 @@
 <body>
 <p>
 <table>
+<?php echo "DEEL 1"?>
 <?php for($rij = 0; $rij < 10; $rij++):?>
     <tr>
         <?php for($kolom = 0; $kolom < 10; $kolom++):?>
@@ -21,9 +22,14 @@
 
 <p>
 <table>
-
-
-
+<?php echo "DEEL 2 <br/>"?>
+<?php for($rij = 0; $rij < 10; $rij++):?>
+<tr>
+<?php for($kolom = 0; $kolom < 10; $kolom++):?>
+    <td>1++</td>
+<?php endfor;?>
+</tr>
+<?php endfor;?>
 </table>
 </p>
 </body>
